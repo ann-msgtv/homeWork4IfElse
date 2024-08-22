@@ -25,10 +25,10 @@ public class Main {
 
         //task3
         System.out.println("task3");
-        int year=1900;
-        boolean leapYear = (float) ((year-1584)%4)==0; //год високосный, если разность делится на 4 без остатка
-        boolean every100 = (float) ((year-1584)%100)!=0; //год високосный, если разность не делится на 100 без остатка
-        boolean every400 = (float) ((year-1584)%400)==0; //год високосный, если разность делится на 400 без остатка
+        int year=1984;
+        boolean leapYear = (float) (year%4)==0; //год високосный, если разность делится на 4 без остатка
+        boolean every100 = (float) (year%100)!=0; //год високосный, если разность не делится на 100 без остатка
+        boolean every400 = (float) (year%400)==0; //год високосный, если разность делится на 400 без остатка
         if (year<1584) {
              System.out.println(year+" год не является високосным");
         } else if ((leapYear && every100)||every400) {
