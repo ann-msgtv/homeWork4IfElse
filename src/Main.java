@@ -25,7 +25,7 @@ public class Main {
 
         //task3
         System.out.println("task3");
-        int year=1984;
+        int year=2028;
         boolean leapYear = (float) (year%4)==0; //год високосный, если разность делится на 4 без остатка
         boolean every100 = (float) (year%100)!=0; //год високосный, если разность не делится на 100 без остатка
         boolean every400 = (float) (year%400)==0; //год високосный, если разность делится на 400 без остатка
